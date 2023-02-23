@@ -87,12 +87,19 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
+if (usuario.password === password){
+  return true;
+} else {
+  return false;
+}
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
-  // Tu código:
+  // Tu código:  
+  usuario.password = nuevaPassword;
+  return usuario;
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
@@ -100,7 +107,10 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
-}
+ let finalamigo = usuario.amigos;
+  finalamigo.push(nuevoAmigo);
+  return usuario;
+} 
 
 function pasarUsuarioAPremium (usuarios) {
   // "usuarios" es un array de objetos "usuario"
