@@ -1,3 +1,7 @@
+body {
+    background-image: url(https://i0.wp.com/kentaro-takahashi.com/wp-content/uploads/2014/10/KT_JPN_117-6_med_col_Hi.jpg?fit=1067%2C1067&ssl=1);
+    background-size: cover;
+}
 #thirdDiv {
     color: red;
     width: 600px;
@@ -7,14 +11,21 @@
     border: 5px;
     border-color: yellow;
     border-style: double;
+    overflow: auto;
 }
 .divClass {
     color: red;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #spanId{
     color: blue;
     font-size: 18px;
     margin: 50px;
+    
 }
 h1 {
     color: purple;
