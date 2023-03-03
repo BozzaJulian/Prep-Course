@@ -74,7 +74,13 @@ function filter(array) {
   }
   return palabra;
 }
-
+/* array.forEach(element=>{
+  if (element[0] === 'a'){
+    palabra.push(element);
+  }
+});
+return palabra;
+} */
 // No modificar nada debajo de esta línea
 // --------------------------------
 
